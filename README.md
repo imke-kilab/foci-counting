@@ -20,6 +20,8 @@ The notebook installs all dependencies automatically. Key packages: `ultralytics
 > ⚠️ **GPU recommended.** Both training steps benefit from GPU acceleration.
 > The density-map regression (Approach 2) takes **over 2 hours on CPU** but only a few minutes on GPU.
 
+The full source code of the project can be found [here](https://gitlab.opencode.de/uba-ki-lab/ressource-efficient-computer-vision).
+
 ## Dataset
 
 The dataset is hosted on [Hugging Face](https://huggingface.co/datasets/Im-KI/cell-foci) and cloned automatically when running the notebook. More details and the full dataset description can be found on [Zenodo](https://zenodo.org/records/19222986).
