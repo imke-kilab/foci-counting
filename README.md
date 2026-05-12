@@ -1,13 +1,19 @@
 # FOCI Dataset – Object Counting
 
-This notebook demonstrates two approaches for counting radiation-induced DNA damage foci in fluorescence microscopy images using the [FOCI dataset](https://zenodo.org/records/19222986) (446 images, pre-cropped and split into train/val/test).
+The **[foci_counting_example.ipynb](https://github.com/imke-kilab/foci-counting/blob/main/foci_counting_example.ipynb)** notebook demonstrates two approaches for counting radiation-induced DNA damage foci in fluorescence microscopy images using the [FOCI dataset](https://zenodo.org/records/19222986) (446 images, pre-cropped and split into train/val/test).
 
 | # | Approach | Idea |
 |---|----------|------|
 | 1 | **YOLO** (YOLOv8n) | Detect individual foci with bounding boxes, count detections |
 | 2 | **U-Net Density Map** | Regress a density map via a U-Net and integrate to obtain the count |
 
-## Requirements
+## Run the notebook
+
+Run the demo notebook in google Colab (no setup required):
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/imke-kilab/foci-counting/blob/main/foci_counting_example.ipynb
+)
 
 The notebook installs all dependencies automatically. Key packages: `ultralytics`, `torch`, `lightning`, [`density_maps`](https://pypi.org/project/density-maps/), `albumentations`.
 
